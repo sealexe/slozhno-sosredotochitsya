@@ -4,6 +4,32 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--text-color, #F1B2CE);
   font-family: var(--main-font, sans-serif);
+  background-image: url(../images/cover-image-dark.png);
   background-color: var(--bg-color, #000028);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+.header {
+  display: grid;
+}
+
+.header__theme-menu-list {
+  display: flex;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--header-text-shadow-color, #FF0070);
+  color: var(--header-text-color, #DB00FF);
+  line-height: 82.5%;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--heading-text-color, #000028);
+  background-color: var(--accent-color, #FF0070);
+}
