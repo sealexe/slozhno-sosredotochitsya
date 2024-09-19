@@ -9,10 +9,43 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: var(--page-padding);
 }
 
 .header {
   display: grid;
+  min-block-size: 668px;
+  position: relative;
+}
+
+.REC__lable {
+  position: absolute;
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--accent-color);
+  right: 38px;
+  top: 0px; 
+}
+
+.REC__lable::after {
+  content: "";
+  display: inline-block;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  inline-size: 25.04px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
 }
 
 .header__theme-menu-list {
