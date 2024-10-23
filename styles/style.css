@@ -25,8 +25,8 @@
   font-size: 18px;
   line-height: 25px;
   color: var(--accent-color);
-  right: 38px;
-  top: 0px; 
+  right: 19px;
+  top: 0px;
 }
 
 .REC__lable::after {
@@ -59,10 +59,11 @@
   line-height: 82.5%;
 }
 
-.heading {
+.title-decor {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   color: var(--heading-text-color, #000028);
   background-color: var(--accent-color, #FF0070);
 }
+
