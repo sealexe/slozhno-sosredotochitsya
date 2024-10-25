@@ -9,24 +9,74 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: var(--page-padding);
 }
+
 
 .header {
   display: grid;
+  block-size: 100vh;
+  grid-template-rows: 1fr min-content 1fr;
   min-block-size: 668px;
   position: relative;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  grid-row: 1 / 2;
+  justify-self: end;
+  align-self: center;
+}
+
+.header__title {
+  grid-row: 2 / 3;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--header-text-shadow-color, #FF0070);
+  color: var(--header-text-color, #DB00FF);
+  line-height: 82.5%;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  height: 26px;
+  padding: 1.5px 13px;
+  border: none;
+  text-transform: lowercase;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color:var(--accent-color);
+  cursor: pointer;
+}
+
+.header__description {
+  grid-row: 3 / 4;
+  justify-self: end;
+  align-self: center;
+  line-height: 23.4px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .REC__lable {
   position: absolute;
+  display: flex;
+  align-items: center;
   font-family: 'IBM Plex Mono';
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: var(--accent-color);
   right: 19px;
-  top: 0px;
+  top: 10px;
 }
 
 .REC__lable::after {
@@ -35,35 +85,62 @@
   inline-size: 9px;
   block-size: 9px;
   background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  border-radius: 50%;
+  margin-inline-start: 10px;
 }
 
-.header::after {
+.header::before {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  inline-size: 25.04px;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
   block-size: 25px;
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
 }
 
-.header__theme-menu-list {
-  display: flex;
-}
-
-.header__title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  text-shadow: 4px 4px 0 var(--header-text-shadow-color, #FF0070);
-  color: var(--header-text-color, #DB00FF);
-  line-height: 82.5%;
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
 }
 
 .title-decor {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
   color: var(--heading-text-color, #000028);
   background-color: var(--accent-color, #FF0070);
 }
+
+.section__heading {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--accent-color);
+}
+
+
+/* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
+
+position: absolute;
+width: 364px;
+height: 117px;
+left: 384px;
+top: 724px;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+
+/* or 130% */
+
+color: #000028;
 
