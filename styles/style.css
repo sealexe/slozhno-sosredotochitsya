@@ -61,9 +61,6 @@
   grid-row: 3 / 4;
   justify-self: end;
   align-self: center;
-  line-height: 23.4px;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .REC__lable {
@@ -115,6 +112,9 @@
 .title-decor {
   color: var(--heading-text-color, #000028);
   background-color: var(--accent-color, #FF0070);
+  line-height: 23.4px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .section__heading {
@@ -123,24 +123,116 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: var(--accent-color);
+  color: var(--accent-color, #);
+  margin-block-end: 20px;
 }
 
+.list-item__heading {
+  margin-block-end: 10px;
+}
 
-/* Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться, особенно когда очень надо */
+.list-item__text {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--text-color);
+}
 
-position: absolute;
-width: 364px;
-height: 117px;
-left: 384px;
-top: 724px;
+.introduction {
+  margin-block-start: 40px;
+  padding: 0px 10px;
+}
 
-font-family: 'IBM Plex Mono';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
+.introduction__list-item:not(:last-child) {
+  margin-block-end: 20px;
+}
 
-/* or 130% */
+.proof__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+}
 
-color: #000028;
+.reasons {
+  margin-block-start: 50px;
+  padding: 0px 10px;
+}
+
+.reasons_list-item:not(:last-child) {
+  margin-block-end: 20px;
+}
+
+.adviсes {
+  margin-block-start: 50px;
+  padding: 0px 10px;
+}
+
+.advices-list-item__heading {
+  color: var(--heading-text-color, #000028);
+  background-color: var(--accent-color, #FF0070);
+  line-height: 23.4px;
+  font-weight: normal;
+  font-size: 18px;
+  margin: 20px 0px 10px;
+}
+
+.gallery {
+  margin-block-start: 50px;
+  padding: 0px 10px;
+}
+
+.gallery__images {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+  margin-block-start: 10px;
+}
+
+.gallery__image {
+  object-fit: contain;
+  object-position: center;
+  max-width: 355px;
+}
+
+.footer {
+  margin-block-start: 40px;
+  display: grid;
+  grid-template-rows: min-content;
+  align-content: center;
+  justify-content: center;
+  min-block-size: 668px;
+  position: relative;
+  block-size: 100vh;
+  padding: 10px;
+}
+
+.footer__heading {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--header-text-shadow-color, #FF0070);
+  color: var(--header-text-color, #DB00FF);
+  line-height: 82.5%;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+}
 
