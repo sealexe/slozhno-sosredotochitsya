@@ -7,10 +7,17 @@
   --main-font: 'IBM Plex Mono';
   --bg-color: #000028;
   --text-color: #F1B2CE;
+  --section__heading-color: #FF0070;
+  --menu__button-color: #FF0070;
+  --hover__link-color: #F1B2CE;
+  --focus__link-color: #F1B2CE;
+  --hover__button-color: #F1B2CE;
+  --focus__button-color: #FF0070;
   --heading-text-color: #000028;
   --accent-color: #FF0070;
+  --decoration-color: #FF0070;
   --header-text-color: #DB00FF;
   --header-text-shadow-color: #FF0070;
-  --page-padding: 10px;
 }
 
+ 
