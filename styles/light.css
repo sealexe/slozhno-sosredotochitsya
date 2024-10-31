@@ -12,7 +12,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-font: 'IBM Plex Mono';
-  --bg-color: #F1B2CE;
+  --bg-color: #FFF1F7;
   --text-color: #353430;
   --section__heading-color: #353430;
   --menu__button-color: #353430;
@@ -31,13 +31,57 @@
   display: none;
 }
 
-.page.theme_light .REC__lable::after {
-  display: none;
-}
 
 @media (min-width: 1024px) {
   .page.theme_light .header__title {
     text-shadow: 4px 4px 0 #FF0070;
+    color: #FFADDD;
   }
+
+  .page.theme_light .footer__heading {
+    text-shadow: 4px 4px 0 #FF0070;
+    color: #FFADDD;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --main-font: 'IBM Plex Mono';
+  --bg-color: #FFF1F7;
+  --text-color: #353430;
+  --section__heading-color: #353430;
+  --menu__button-color: #353430;
+  --hover__link-color: #353430;
+  --focus__link-color: #353430;
+  --hover__button-color: #32312d40;
+  --focus__button-color: #353430 ;
+  --heading-text-color: #353430;
+  --accent-color: #FF8DCB;
+  --decoration-color: #353430;
+  --header-text-color: #FFC2E6;
+  --header-text-shadow-color: #FF8DCB;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .page.theme_auto .REC__lable {
+    display: none;
+  }
+
+} 
+
+@media (prefers-color-scheme: light) and (min-width: 1024px) {
+  .page.theme_auto .header__title {
+    text-shadow: 4px 4px 0 #FF0070;
+    color: #FFADDD;
+  }
+
+  .page.theme_auto .footer__heading {
+    text-shadow: 4px 4px 0 #FF0070;
+    color: #FFADDD;
+  }
+
 }
 
