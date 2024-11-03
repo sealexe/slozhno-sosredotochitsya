@@ -305,13 +305,22 @@
   gap: 20px;
 }
 
+.advices-list {
+  display: grid;
+  gap: 20px;
+}
+
+.advices-list__heading {
+  margin-block-end: 20px;
+}
+
 .advices-list-item__heading {
   color: var(--heading-text-color, #000028);
   background-color: var(--accent-color, #FF0070);
   line-height: 23.4px;
   font-weight: normal;
   font-size: 18px;
-  margin: 20px 0px 10px;
+  margin-block-end: 10px;
 }
 
 @media (768px <= width < 1024px) {
